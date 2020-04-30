@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UnfollowFriends">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:src="@drawable/UnfollowFriendsBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/first_background"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="192dp"
+        android:scaleType="center"
+        android:src="@drawable/mask"
+        android:id="@+id/second_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/back"
+        android:layout_margin="20dp"
+        android:id="@+id/back_arrow"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/josdebum"
+        android:layout_marginTop="40dp"
+        android:id="@+id/profile_picture"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deborah Joseph"
+        android:id="@+id/userName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_picture"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1273"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userName"
+        android:id="@+id/no_of_friends"
+        android:textSize="18dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="40dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FRIENDS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/no_of_friends"
+        android:id="@+id/friends"
+        android:textSize="10dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="40dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="80"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userName"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/no_of_networks"
+        android:textSize="18dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NETWORKS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/no_of_networks"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/networks"
+        android:textSize="10dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="132"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userName"
+        android:id="@+id/no_of_uploads"
+        android:textSize="18dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginRight="40dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPLOADS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/no_of_uploads"
+        android:id="@+id/uploads"
+        android:textSize="10dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginRight="40dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/networks"
+        android:src="@drawable/remove_friend"
+        android:clickable="true"
+        android:id="@+id/remove_friend_button"
+        />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="About"
+    app:layout_constraintStart_toStartOf="@id/second_background"
+    app:layout_constraintTop_toBottomOf="@id/remove_friend_button"
+    android:textColor="#010205"
+    android:layout_margin="20dp"
+    android:textSize="14sp"
+        android:id="@+id/about"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Combining data, design, and machine learning to build intelligent products and services that improve people\'s lives."
+        android:textColor="#B4C2D3"
+        android:textSize="14sp"
+        android:id="@+id/about_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/about" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Like"
+        app:layout_constraintStart_toStartOf="@id/second_background"
+        app:layout_constraintTop_toBottomOf="@id/about_text"
+        android:textColor="#010205"
+        android:layout_margin="20dp"
+        android:textSize="14sp"
+        android:id="@+id/like"
+        />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="Yam"
+        app:layout_constraintStart_toStartOf="@id/second_background"
+        app:layout_constraintTop_toBottomOf="@id/like"
+        android:textColor="#010205"
+        android:layout_margin="20dp"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:paddingTop="4dp"
+        android:alpha="0.5"
+        android:id="@+id/type1"
+        android:background="@drawable/rectangle_copy"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:text="Exercise"
+        app:layout_constraintStart_toStartOf="@id/second_background"
+        app:layout_constraintTop_toBottomOf="@id/type1"
+        android:textColor="#010205"
+        android:layout_margin="20dp"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:paddingTop="4dp"
+        android:alpha="0.5"
+        android:id="@+id/type2"
+        android:background="@drawable/rectangle_copy"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="Ground Nut"
+       app:layout_constraintStart_toEndOf="@id/type1"
+        app:layout_constraintTop_toBottomOf="@id/like"
+        android:textColor="#010205"
+        android:layout_margin="20dp"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:paddingTop="4dp"
+        android:alpha="0.5"
+        android:id="@+id/type3"
+        android:background="@drawable/rectangle_copy"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="Giving"
+        app:layout_constraintStart_toEndOf="@id/type1"
+        app:layout_constraintTop_toBottomOf="@id/type3"
+        android:textColor="#010205"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:paddingTop="4dp"
+        android:alpha="0.5"
+        android:id="@+id/type4"
+        android:background="@drawable/rectangle_copy"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:text="Sausage"
+        app:layout_constraintStart_toEndOf="@id/type3"
+        app:layout_constraintTop_toBottomOf="@id/like"
+        android:textColor="#010205"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:paddingTop="4dp"
+        android:alpha="0.5"
+        android:id="@+id/type5"
+        android:background="@drawable/rectangle_copy"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:text="Artificial Intelligence"
+        app:layout_constraintStart_toEndOf="@id/type4"
+        app:layout_constraintTop_toBottomOf="@id/type5"
+        android:textColor="#010205"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:paddingTop="4dp"
+        android:alpha="0.5"
+        android:id="@+id/type6"
+        android:background="@drawable/rectangle_copy"
+        android:gravity="center_horizontal" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
