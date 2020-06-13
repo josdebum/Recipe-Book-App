@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".OpenedChat">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/back_arrow"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:clickable="true"
+        android:src="@drawable/black_back_arrow"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/more"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp"
+        android:clickable="true"
+        android:src="@drawable/more_button"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adebayo Apercu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#010205"
+        android:id="@+id/userName"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userName"
+        android:background="#8894A2"
+        android:layout_marginTop="20dp"
+        android:id="@+id/view"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:text="Today"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/message_background_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date"
+        android:layout_marginLeft="20dp"
+        android:text="Wow."
+        android:textSize="14sp"
+        android:textColor="#AB000000"
+        android:layout_marginStart="20dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:paddingTop="8dp"
+        android:id="@+id/message1"
+        />
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/message_background_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/message1"
+        android:layout_marginLeft="20dp"
+        android:text="So what is going on?"
+        android:textSize="14sp"
+        android:textColor="#AB000000"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:paddingTop="8dp"
+        android:id="@+id/message2"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/message_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/message2"
+        android:layout_marginLeft="20dp"
+        android:text="A selection of chicken dishes served together on a white table. This is comfort food heaven."
+        android:textSize="14sp"
+        android:textColor="#AB000000"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
