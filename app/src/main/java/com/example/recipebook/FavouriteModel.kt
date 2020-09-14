@@ -1,7 +1,7 @@
 package com.example.recipebook
 
+class FavouriteModel {
 
-    class Food {
         var name: String? = null
         var image: Int? = null
         var like: Int? = null
@@ -11,4 +11,4 @@ package com.example.recipebook
             this.image = image
             this.like = like
 
-}}
+        }}

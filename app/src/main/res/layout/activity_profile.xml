@@ -9,7 +9,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scaleType="center"
+        android:scaleType="centerCrop"
         android:src="@drawable/profile_background"
         app:layout_constraintStart_toStartOf="parent"
         android:id="@+id/first_background"
@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="192dp"
-        android:scaleType="center"
+        android:scaleType="centerCrop"
         android:src="@drawable/mask"
         android:id="@+id/second_background"
         app:layout_constraintStart_toStartOf="parent"

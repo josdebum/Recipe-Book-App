@@ -34,12 +34,8 @@ class Friends : AppCompatActivity() {
             friend.name = "James" + i
             friend.no_of_friends =  "James" + i
             friendList!!.add(friend)
-
-
         }
         adapter!!.notifyDataSetChanged()
-
-
 
     }
     }
