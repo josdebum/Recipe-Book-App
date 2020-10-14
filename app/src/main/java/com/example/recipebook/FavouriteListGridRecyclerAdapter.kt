@@ -7,7 +7,8 @@ import androidx.recyclerview.widget.RecyclerView
 class FavouriteListGridRecyclerAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private var listOfMovies = listOf<FavouriteModel>()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        return FavouriteViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.favourite_grid_list, parent, false))
+        return FavouriteViewHolder(LayoutInflater.from(parent.context).
+            inflate(R.layout.favourite_grid_list, parent, false))
     }
 
     override fun getItemCount(): Int = listOfMovies.size
@@ -21,4 +22,5 @@ class FavouriteListGridRecyclerAdapter: RecyclerView.Adapter<RecyclerView.ViewHo
         this.listOfMovies = listOfMovies
         notifyDataSetChanged()
     }
+
 }

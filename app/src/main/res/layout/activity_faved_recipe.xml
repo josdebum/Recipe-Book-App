@@ -64,19 +64,17 @@
             android:textColor="#34A853"
             android:textStyle="normal"
             />
-
-        <RatingBar
-        android:id="@+id/rating"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text3"
-        android:stepSize="0.10dp"
-        android:numStars="5"
-        android:isIndicator="true"
-        style="?android:attr/ratingBarStyleIndicator"
-        android:scaleX=".8"
-        android:scaleY=".8"/>
+<!--        <RatingBar-->
+<!--        android:id="@+id/rating"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/text3"-->
+<!--        android:stepSize="0.10dp"-->
+<!--        android:isIndicator="true"-->
+<!--        style="?android:attr/ratingBarStyleIndicator"-->
+<!--        android:scaleX=".8"-->
+<!--        android:scaleY=".8"/>-->
 
 
         <androidx.cardview.widget.CardView
@@ -84,7 +82,7 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/rating"
+            app:layout_constraintTop_toBottomOf="@id/fav_name"
             android:layout_margin="20dp"
             app:cardCornerRadius="10dp"
             android:layout_marginBottom="10dp"
@@ -107,7 +105,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"/>
 
-            <RatingBar
+            <!--<RatingBar
                 android:id="@+id/rate_recipe"
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
@@ -121,7 +119,7 @@
                 android:scaleX="1"
                 android:scaleY="1"
                 android:layout_marginLeft="20dp"/>
-
+-->
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

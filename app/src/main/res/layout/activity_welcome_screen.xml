@@ -55,6 +55,7 @@
         android:textColorHint="#FFFFFF"
         android:paddingStart="20dp"
         android:hint="Email"
+        android:textColor="#FFFFFF"
         android:id="@+id/input_email"
         android:paddingLeft="20dp" />
 
@@ -70,6 +71,7 @@
         android:layout_marginTop="20dp"
         android:id="@+id/input_password"
         android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
         android:hint="Password"
         android:paddingLeft="20dp" />
     <TextView
@@ -163,7 +165,7 @@
         />
 
     <Button
-        android:id="@+id/create_account"
+        android:id="@+id/createAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"

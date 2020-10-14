@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.recipebook">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FavedRecipe"></activity>
+        <activity android:name=".CreateAccountActivity"></activity>
+        <activity android:name=".EmailPasswordActivity" />
+        <activity android:name=".FavedRecipe" />
         <activity android:name=".Recipe1" />
         <activity android:name=".Network" />
         <activity android:name=".MainScreen" />
@@ -19,7 +23,6 @@
         <activity android:name=".OpenedChat" />
         <activity android:name=".Profile" />
         <activity android:name=".UnfollowFriends" />
-        <activity android:name=".Notifications_List_View" />
         <activity android:name=".Home" />
         <activity android:name=".WelcomeScreen">
             <intent-filter>

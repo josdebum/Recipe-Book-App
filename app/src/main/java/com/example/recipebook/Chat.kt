@@ -1,7 +1,9 @@
 package com.example.recipebook
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_chat.*
@@ -20,6 +22,10 @@ class Chat : AppCompatActivity() {
         chatList = ArrayList<Chats>()
         layoutManager = LinearLayoutManager(this)
         adapter = ChatListAdapter(chatList!!, this)
+
+        back_arrow.setOnClickListener {
+            startActivity(Intent(this, Home::class.java))
+        }
 
 
         //setup list ( Recyclerview
