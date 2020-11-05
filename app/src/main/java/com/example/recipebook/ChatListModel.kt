@@ -1,8 +1,6 @@
 package com.example.recipebook
 
-class Chats {
+data class Chats (var name: String, var message: String, var image: Int) {
 
-    var name: String?=null
-    var message : String?=null
-    var image :Int? = null
+
 }

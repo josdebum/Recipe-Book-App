@@ -33,16 +33,33 @@ class Chat : AppCompatActivity() {
         chats_recycler_view.adapter = adapter
 
 
+        chatList!!.add(Chats("Adebayo Apercu", "A selection of chicken dishes served together ...", R.drawable.josdebum))
+
+        chatList!!.add(Chats("Ronke Igboegwu", "A selection of chicken dishes served together ...", R.drawable.chat_image))
+
+        chatList!!.add(Chats("Ekaite Akande", "A selection of chicken dishes served together ...", R.drawable.chat_image_2))
+        chatList!!.add(Chats("\n" +
+                "Adedunni Nwaneri", "A selection of chicken dishes served together ...", R.drawable.chat_image_3))
+
+        chatList!!.add(Chats("Adebayo Apercu", "A selection of chicken dishes served together ...", R.drawable.josdebum))
+
+        chatList!!.add(Chats("Ronke Igboegwu", "A selection of chicken dishes served together ...", R.drawable.chat_image))
+
+        chatList!!.add(Chats("Ekaite Akande", "A selection of chicken dishes served together ...", R.drawable.chat_image_2))
+        chatList!!.add(Chats("\n" +
+                "Adedunni Nwaneri", "A selection of chicken dishes served together ...", R.drawable.chat_image_3))
+
+        chatList!!.add(Chats("Adebayo Apercu", "A selection of chicken dishes served together ...", R.drawable.josdebum))
+
+        chatList!!.add(Chats("Ronke Igboegwu", "A selection of chicken dishes served together ...", R.drawable.chat_image))
+
+        chatList!!.add(Chats("Ekaite Akande", "A selection of chicken dishes served together ...", R.drawable.chat_image_2))
+        chatList!!.add(Chats("\n" +
+                "Adedunni Nwaneri", "A selection of chicken dishes served together ...", R.drawable.chat_image_3))
+
+
         //load data
-        for (i in 0..16) {
-            val chats = Chats()
-            chats.name = "James" + i
-            chats.message =  "James" + i
-            chatList!!.add(chats)
 
-
-        }
-        adapter!!.notifyDataSetChanged()
 
     }
 }

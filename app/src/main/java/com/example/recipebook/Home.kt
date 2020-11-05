@@ -27,21 +27,32 @@ class Home : AppCompatActivity() {
         notification_recycler_view.adapter = adapter
 
 
-        //load data
-
-//            //val notification = arrayListOf(Notification)
-//            notification.message_by = "Deborah Joseph sent you a message"
-//            notification.date =  "yesterday"
-//            notificationList!!.add(notification)
-
-        val notification = ArrayList<Notification>()
-
-        notification.add(Notification("Ramiz Khan", "Ranchi Jharkhand")
 
 
 
 
+        notificationList!!.add(Notification("Adebayo Apercu sent you a message", "Yesterday"))
 
+        notificationList!!.add(Notification("Oladele Tamilore replied your message", "Monday 22 October"))
+
+        notificationList!!.add(Notification("20 people added your recipe as a favourite", "Friday 19 October"))
+
+        notificationList!!.add(Notification("Adebayo Apercu sent you a message", "Yesterday"))
+
+        notificationList!!.add(Notification("Oladele Tamilore replied your message", "Monday 22 October"))
+
+        notificationList!!.add(Notification("20 people added your recipe as a favourite", "Friday 19 Oct"))
+        notificationList!!.add(Notification("Adebayo Apercu sent you a message", "Yesterday"))
+
+        notificationList!!.add(Notification("Oladele Tamilore replied your message", "Monday 22 October"))
+
+        notificationList!!.add(Notification("20 people added your recipe as a favourite", "Friday 19 Oct"))
+
+        notificationList!!.add(Notification("Adebayo Apercu sent you a message", "Yesterday"))
+
+        notificationList!!.add(Notification("Oladele Tamilore replied your message", "Monday 22 October"))
+
+        notificationList!!.add(Notification("20 people added your recipe as a favourite", "Friday 19 Oct"))
 
 
 

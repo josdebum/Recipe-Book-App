@@ -16,11 +16,15 @@ class FavouriteListGridRecyclerAdapter: RecyclerView.Adapter<RecyclerView.ViewHo
     override fun onBindViewHolder(viewHolder: RecyclerView.ViewHolder, position: Int) {
         val favouriteViewHolder = viewHolder as FavouriteViewHolder
         favouriteViewHolder.bindView(listOfMovies[position])
+
+
     }
 
     fun setMovieList(listOfMovies: List<FavouriteModel>) {
         this.listOfMovies = listOfMovies
         notifyDataSetChanged()
     }
+
+
 
 }
