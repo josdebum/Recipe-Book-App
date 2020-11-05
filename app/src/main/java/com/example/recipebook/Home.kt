@@ -5,8 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.activity_friends.*
 import kotlinx.android.synthetic.main.activity_home.*
+import kotlinx.android.synthetic.main.notification_list.*
 
 
 class Home : AppCompatActivity() {
@@ -27,16 +27,54 @@ class Home : AppCompatActivity() {
         notification_recycler_view.adapter = adapter
 
 
-        //load data
-        for (i in 0..16) {
-            val notification = Notification()
-            notification.message_by = "James" + i
-            notification.date =  "James" + i
-            notificationList!!.add(notification)
 
 
-        }
-        adapter!!.notifyDataSetChanged()
+
+
+        notificationList!!.add(Notification("Adebayo Apercu sent you a message", "Yesterday"))
+
+        notificationList!!.add(Notification("Oladele Tamilore replied your message", "Monday 22 October"))
+
+        notificationList!!.add(Notification("20 people added your recipe as a favourite", "Friday 19 October"))
+
+        notificationList!!.add(Notification("Adebayo Apercu sent you a message", "Yesterday"))
+
+        notificationList!!.add(Notification("Oladele Tamilore replied your message", "Monday 22 October"))
+
+        notificationList!!.add(Notification("20 people added your recipe as a favourite", "Friday 19 Oct"))
+        notificationList!!.add(Notification("Adebayo Apercu sent you a message", "Yesterday"))
+
+        notificationList!!.add(Notification("Oladele Tamilore replied your message", "Monday 22 October"))
+
+        notificationList!!.add(Notification("20 people added your recipe as a favourite", "Friday 19 Oct"))
+
+        notificationList!!.add(Notification("Adebayo Apercu sent you a message", "Yesterday"))
+
+        notificationList!!.add(Notification("Oladele Tamilore replied your message", "Monday 22 October"))
+
+        notificationList!!.add(Notification("20 people added your recipe as a favourite", "Friday 19 Oct"))
+
+
+
+
+
+
+//            notification.message_by = "Oladele Tamilore replied your message"
+//            notification.date =  "Monday 22 October"
+//           // notificationList!!.add(notification)
+//
+//            notification.message_by = "20 people added your recipe as a favourite"
+//            notification.date =  "Friday 19 October"
+//            notificationList!!.add(notification)
+
+
+
+
+
+
+
+
+
 
 
 

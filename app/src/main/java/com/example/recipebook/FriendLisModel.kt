@@ -1,8 +1,6 @@
 package com.example.recipebook
 
-class Friend {
-    var name: String?=null
-    var no_of_friends : String?=null
-    var image :Int? = null
+data class Friend (var name: String, var no_of_friends : String, var image: Int){
+
     var button : Int? = null
 }

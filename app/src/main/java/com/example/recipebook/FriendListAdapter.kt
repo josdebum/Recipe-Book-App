@@ -5,6 +5,7 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.ContextCompat.startActivity
@@ -40,9 +41,12 @@ class FriendListAdapter (private val list: ArrayList<Friend>,
         fun bindItem(friend : Friend) {
             var name: TextView = itemView.findViewById(R.id.name) as TextView
             var no_of_friends: TextView = itemView.findViewById(R.id.no_of_friends) as TextView
+            var image: ImageView = itemView.findViewById(R.id.friend_profile_picture) as ImageView
 
             name.text = friend.name
-            no_of_friends.text = friend.no_of_friends.toString()
+            no_of_friends.text = friend.no_of_friends
+            image.setImageResource(friend.image)
+
 
 
 
@@ -50,7 +54,9 @@ class FriendListAdapter (private val list: ArrayList<Friend>,
             itemView.setOnClickListener {
 
 
-                }
+                val intent = Intent( context, Profile::class.java)
+                context.startActivity(intent)
+            }
             }
 
         }
