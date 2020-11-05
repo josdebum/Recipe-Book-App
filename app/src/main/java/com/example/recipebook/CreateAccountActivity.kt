@@ -43,7 +43,7 @@ class CreateAccountActivity : AppCompatActivity() {
         setContentView(R.layout.activity_create_account)
         initialise()
 
-
+/*
 //        mAuth = FirebaseAuth.getInstance()
 //
 //
@@ -89,7 +89,7 @@ class CreateAccountActivity : AppCompatActivity() {
 //            }
 //
 //        }
-//    }
+//    }*/
     }
 
     private fun initialise() {
