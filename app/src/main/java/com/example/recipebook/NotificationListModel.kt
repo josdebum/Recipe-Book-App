@@ -1,7 +1,7 @@
 package com.example.recipebook
 
-class Notification {
-    var message_by: String? = null
-    var date: String? = null
+class Notification(val message_by: String, val date: String) {
+
+
     var dot: Int? = null
 }

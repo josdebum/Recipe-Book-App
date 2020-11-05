@@ -3,19 +3,18 @@ package com.example.recipebook
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder as ViewHolder1
 
-class CustomAdapter (val userList: ArrayList<User>) : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
+class CustomAdapter(val userList: ArrayList<Notification>) : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val volume = LayoutInflater.from(parent.context).inflate(R.layout.list_layout, parent, false)
         return ViewHolder(volume)
     }
 
-    override fun onBindViewHolder(holder: CustomAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bindItems(userList[position])
     }
 
@@ -26,7 +25,7 @@ class CustomAdapter (val userList: ArrayList<User>) : RecyclerView.Adapter<Custo
     //the class is hodling the list view
     class ViewHolder(itemView: View) : ViewHolder1(itemView) {
 
-        fun bindItems(user: User) {
+        fun bindItems(user: Notification) {
             val textViewName = itemView.findViewById(R.id.userName) as TextView
             val textViewAddress  = itemView.findViewById(R.id.Message) as TextView
             textViewName.text = user.name

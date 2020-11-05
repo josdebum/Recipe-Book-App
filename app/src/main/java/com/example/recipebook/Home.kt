@@ -5,8 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.activity_friends.*
 import kotlinx.android.synthetic.main.activity_home.*
+import kotlinx.android.synthetic.main.notification_list.*
 
 
 class Home : AppCompatActivity() {
@@ -28,15 +28,42 @@ class Home : AppCompatActivity() {
 
 
         //load data
-        for (i in 0..16) {
-            val notification = Notification()
-            notification.message_by = "James" + i
-            notification.date =  "James" + i
-            notificationList!!.add(notification)
+
+//            //val notification = arrayListOf(Notification)
+//            notification.message_by = "Deborah Joseph sent you a message"
+//            notification.date =  "yesterday"
+//            notificationList!!.add(notification)
+
+        val notification = ArrayList<Notification>()
+
+        notification.add(Notification("Ramiz Khan", "Ranchi Jharkhand")
 
 
-        }
-        adapter!!.notifyDataSetChanged()
+
+
+
+
+
+
+
+
+
+//            notification.message_by = "Oladele Tamilore replied your message"
+//            notification.date =  "Monday 22 October"
+//           // notificationList!!.add(notification)
+//
+//            notification.message_by = "20 people added your recipe as a favourite"
+//            notification.date =  "Friday 19 October"
+//            notificationList!!.add(notification)
+
+
+
+
+
+
+
+
+
 
 
 
