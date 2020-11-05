@@ -31,7 +31,7 @@ class CreateAccountActivity : AppCompatActivity() {
     private var mDatabase: FirebaseDatabase? = null
     private var etFirstName: EditText? = null
     private var etLastName: EditText? = null
-
+    private var tvForgotPassword: TextView? = null
     private var email: String? = null
     private var password: String? = null
     private var firstName: String? = null
@@ -125,9 +125,9 @@ class CreateAccountActivity : AppCompatActivity() {
                         Log.d("users" , "createUserWithEmail:success")
                         val userId = mAuth!!.currentUser!!.uid
 
-                        startActivity(Intent(this, Home::class.java))
+                        startActivity(Intent(this, WelcomeScreen::class.java))
                         //Verify Email
-                        //verifyEmail();
+                        verifyEmail();
                         //update user profile information
                         val currentUserDb = mDatabaseReference!!.child(userId)
                         currentUserDb.child("firstName").setValue(firstName)
@@ -156,20 +156,20 @@ class CreateAccountActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-//    private fun verifyEmail() {
-//        val mUser = mAuth!!.currentUser;
-//        mUser!!.sendEmailVerification()
-//            .addOnCompleteListener(this) { task ->
-//                if (task.isSuccessful) {
-//                    Toast.makeText(this@CreateAccountActivity,
-//                        "Verification email sent to " + mUser.getEmail(),
-//                        Toast.LENGTH_SHORT).show()
-//                } else {
-//                    Log.d("users", "sendEmailVerification", task.exception)
-//                    Toast.makeText(this@CreateAccountActivity,
-//                        "Failed to send verification email.",
-//                        Toast.LENGTH_SHORT).show()
-//                }
-//            }
-//    }
+    private fun verifyEmail() {
+        val mUser = mAuth!!.currentUser;
+        mUser!!.sendEmailVerification()
+            .addOnCompleteListener(this) { task ->
+                if (task.isSuccessful) {
+                    Toast.makeText(this@CreateAccountActivity,
+                        "Verification email sent to " + mUser.getEmail(),
+                        Toast.LENGTH_SHORT).show()
+                } else {
+                    Log.d("users", "sendEmailVerification", task.exception)
+                    Toast.makeText(this@CreateAccountActivity,
+                        "Failed to send verification email.",
+                        Toast.LENGTH_SHORT).show()
+                }
+            }
+    }
 }

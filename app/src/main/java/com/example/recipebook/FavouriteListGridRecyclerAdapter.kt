@@ -18,7 +18,11 @@ class FavouriteListGridRecyclerAdapter: RecyclerView.Adapter<RecyclerView.ViewHo
         favouriteViewHolder.bindView(listOfMovies[position])
 
 
+
+
     }
+
+
 
     fun setMovieList(listOfMovies: List<FavouriteModel>) {
         this.listOfMovies = listOfMovies

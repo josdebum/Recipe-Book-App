@@ -14,4 +14,6 @@
     <string name="create_account" />
     <string name="sign_in" />
     <string name="desc_firebase_lockup" />
+    <string name="etEmail" />
+    <string name="send_password_reset_email" />
 </resources>
