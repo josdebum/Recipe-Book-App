@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
 import android.widget.BaseAdapter
 import androidx.recyclerview.widget.GridLayoutManager
 import kotlinx.android.synthetic.main.activity_favourites.*
@@ -30,50 +31,67 @@ class Favourites : AppCompatActivity() {
         val movieListAdapter = FavouriteListGridRecyclerAdapter()
         favouriteRecycler.adapter = movieListAdapter
         movieListAdapter.setMovieList(generateDummyData())
+
+
     }
 
     private fun generateDummyData(): List<FavouriteModel> {
-        val listOfMovie = mutableListOf<FavouriteModel>()
+        val listOfFavourites = mutableListOf<FavouriteModel>()
 
-        var favouriteModel =  FavouriteModel(  "Avengers", R.drawable.profile_background, R.drawable.like_button)
-        listOfMovie.add(favouriteModel)
+        var favouriteModel =  FavouriteModel(  "Sausage & Peppers Group", R.drawable.favourite1, R.drawable.like_button)
+        listOfFavourites.add(favouriteModel)
 
-        favouriteModel =  FavouriteModel(  "Avengers", R.drawable.profile_background, R.drawable.like_button)
-        listOfMovie.add(favouriteModel)
-        favouriteModel =  FavouriteModel(  "Avengers", R.drawable.profile_background, R.drawable.like_button)
-        listOfMovie.add(favouriteModel)
+        favouriteModel =  FavouriteModel(  "Strawberry Wonders", R.drawable.favourite2, R.drawable.like_button)
+        listOfFavourites.add(favouriteModel)
+        favouriteModel =  FavouriteModel(  "Pro-bros", R.drawable.favourite3, R.drawable.like_button)
+        listOfFavourites.add(favouriteModel)
 
-        favouriteModel =  FavouriteModel(  "Avengers", R.drawable.profile_background, R.drawable.like_button)
-        listOfMovie.add(favouriteModel)
+        favouriteModel =  FavouriteModel(  "Colours of Strawberry", R.drawable.favourite4, R.drawable.like_button)
+        listOfFavourites.add(favouriteModel)
 
-        favouriteModel =  FavouriteModel(  "Avengers", R.drawable.profile_background, R.drawable.like_button)
-        listOfMovie.add(favouriteModel)
+        favouriteModel =  FavouriteModel(  "Food fitfam", R.drawable.favourite5, R.drawable.like_button)
+        listOfFavourites.add(favouriteModel)
 
-        favouriteModel =  FavouriteModel(  "Avengers", R.drawable.profile_background, R.drawable.like_button)
-        listOfMovie.add(favouriteModel)
+        favouriteModel =  FavouriteModel(  "Veges Gang", R.drawable.favourite6, R.drawable.like_button)
+        listOfFavourites.add(favouriteModel)
 
-        favouriteModel =  FavouriteModel(  "Avengers", R.drawable.profile_background, R.drawable.like_button)
-        listOfMovie.add(favouriteModel)
+        favouriteModel =  FavouriteModel(  "Strawberry Wonders", R.drawable.favourite2, R.drawable.like_button)
+        listOfFavourites.add(favouriteModel)
+        favouriteModel =  FavouriteModel(  "Pro-bros", R.drawable.favourite3, R.drawable.like_button)
+        listOfFavourites.add(favouriteModel)
 
-        favouriteModel =  FavouriteModel(  "Avengers", R.drawable.profile_background, R.drawable.like_button)
-        listOfMovie.add(favouriteModel)
+        favouriteModel =  FavouriteModel(  "Colours of Strawberry", R.drawable.favourite4, R.drawable.like_button)
+        listOfFavourites.add(favouriteModel)
 
-        favouriteModel =  FavouriteModel(  "Avengers", R.drawable.profile_background, R.drawable.like_button)
-        listOfMovie.add(favouriteModel)
+        favouriteModel =  FavouriteModel(  "Food fitfam", R.drawable.favourite5, R.drawable.like_button)
+        listOfFavourites.add(favouriteModel)
 
-        favouriteModel =  FavouriteModel(  "Avengers", R.drawable.profile_background, R.drawable.like_button)
-        listOfMovie.add(favouriteModel)
-
-        favouriteModel =  FavouriteModel(  "Avengers", R.drawable.profile_background, R.drawable.like_button)
-        listOfMovie.add(favouriteModel)
-
-        favouriteModel =  FavouriteModel(  "Avengers", R.drawable.profile_background, R.drawable.like_button)
-        listOfMovie.add(favouriteModel)
+        favouriteModel =  FavouriteModel(  "Veges Gang", R.drawable.favourite6, R.drawable.like_button)
+        listOfFavourites.add(favouriteModel)
 
 
-        return listOfMovie
+        favouriteModel =  FavouriteModel(  "Strawberry Wonders", R.drawable.favourite2, R.drawable.like_button)
+        listOfFavourites.add(favouriteModel)
+        favouriteModel =  FavouriteModel(  "Pro-bros", R.drawable.favourite3, R.drawable.like_button)
+        listOfFavourites.add(favouriteModel)
+
+        favouriteModel =  FavouriteModel(  "Colours of Strawberry", R.drawable.favourite4, R.drawable.like_button)
+        listOfFavourites.add(favouriteModel)
+
+        favouriteModel =  FavouriteModel(  "Food fitfam", R.drawable.favourite5, R.drawable.like_button)
+        listOfFavourites.add(favouriteModel)
+
+        favouriteModel =  FavouriteModel(  "Veges Gang", R.drawable.favourite6, R.drawable.like_button)
+        listOfFavourites.add(favouriteModel)
+
+
+
+
+
+
+        return listOfFavourites
+
     }
-
 
 
 

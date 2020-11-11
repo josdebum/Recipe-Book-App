@@ -8,18 +8,15 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recipebook.ChatListAdapter.ViewHolder
-import java.security.AccessController.getContext
 
 class ChatListAdapter (private val list: ArrayList<Chats>,
                        private val context: Context
 ) : RecyclerView.Adapter<ViewHolder>() {
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        fun bindItem(chats : Chats) {
+        fun bindItem(chats: Chats) {
             var name: TextView = itemView.findViewById(R.id.name) as TextView
             var message: TextView = itemView.findViewById(R.id.message) as TextView
             var image: ImageView = itemView.findViewById(R.id.userImage) as ImageView

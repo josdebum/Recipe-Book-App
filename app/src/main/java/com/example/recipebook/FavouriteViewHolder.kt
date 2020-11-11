@@ -8,10 +8,10 @@ import java.util.*
 
 class FavouriteViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     fun bindView(favouriteModel: FavouriteModel) {
-        itemView.favouriteName.text = favouriteModel.name
+        itemView.name.text = favouriteModel.name
 
         Glide.with(itemView.context).load(favouriteModel.like).into(itemView.likeButton)
-        Glide.with(itemView.context).load(favouriteModel.image).into(itemView.favouriteImage)
+        Glide.with(itemView.context).load(favouriteModel.image).into(itemView.Image)
 
     }
 }

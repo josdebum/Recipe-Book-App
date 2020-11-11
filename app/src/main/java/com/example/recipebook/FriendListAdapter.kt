@@ -11,7 +11,7 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recipebook.FriendListAdapter.ViewHolder
-import kotlinx.android.synthetic.main.frienditem.*
+
 
 class FriendListAdapter (private val list: ArrayList<Friend>,
                          private val context: Context) : RecyclerView.Adapter<ViewHolder>(){

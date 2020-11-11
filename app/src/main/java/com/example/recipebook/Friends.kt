@@ -16,6 +16,7 @@ class Friends : AppCompatActivity() {
     private var friendList: ArrayList<Friend>? = null
     private var layoutManager: RecyclerView.LayoutManager? = null
     private var button: Button? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_friends)

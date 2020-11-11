@@ -1,59 +1,45 @@
 package com.example.recipebook
 
+import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.activity_recipe1.*
+import kotlinx.android.synthetic.main.recipe_search_item.*
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
+class Recipe : AppCompatActivity() {
 
-/**
- * A simple [Fragment] subclass.
- * Use the [Recipe.newInstance] factory method to
- * create an instance of this fragment.
- */
-class Recipe : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
+    private var adapter: SearchRecipeAdapter? = null
+    private var recipeList: ArrayList<SearchRecipe>? = null
+    private var layoutManager: RecyclerView.LayoutManager? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
+        setContentView(R.layout.activity_recipe1)
+
+        recipeList = ArrayList<SearchRecipe>()
+        layoutManager = LinearLayoutManager(this)
+        adapter = SearchRecipeAdapter(recipeList!!, this)
+
+        recyclerView.layoutManager = layoutManager
+        recyclerView.adapter = adapter
+
+        recipeList!!.add(SearchRecipe("My search history"))
+        recipeList!!.add(SearchRecipe("My favourite recipes"))
+        recipeList!!.add(SearchRecipe("Easy Mexican Casserole"))
+        recipeList!!.add(SearchRecipe("Thai Chicken Balls"))
+        recipeList!!.add(SearchRecipe("Honey Mustard Pork Chops"))
+        recipeList!!.add(SearchRecipe("Salsa Chicken Rice Casserole"))
+        recipeList!!.add(SearchRecipe("Banana Cinnamon Roll Casserole"))
+        recipeList!!.add(SearchRecipe("My search history"))
+        recipeList!!.add(SearchRecipe("My search history"))
+        recipeList!!.add(SearchRecipe("My search history"))
+        recipeList!!.add(SearchRecipe("My search history"))
+
+        search_by_ingredient.setOnClickListener(){
+            startActivity(Intent(this, Recipe2::class.java))
         }
+
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_recipe, container, false)
-    }
-
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment Recipe.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            Recipe().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
-    }
 }

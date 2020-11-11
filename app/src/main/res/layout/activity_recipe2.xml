@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Recipe">
+    tools:context=".Recipe2">
 
     <ImageView
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
         android:layout_height="30dp"
         android:layout_marginTop="20dp"
         android:clickable="true"
-        android:src="@drawable/swipe_1"
+        android:src="@drawable/swipe_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -83,17 +83,38 @@
             android:layout_height="match_parent">
 
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/explore_more_networks"
+                app:layout_constraintBottom_toTopOf="@id/more_recipes"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="Explore more networks"
+                android:padding="6dp"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#34A853"/>
 
+            <View
+                android:id="@+id/more_recipes"
+                android:layout_width="192dp"
+                android:layout_height="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="20dp"
+                android:background="#34A853"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -102,28 +123,7 @@
 
     </androidx.cardview.widget.CardView>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/explore_more_networks"
-        app:layout_constraintBottom_toTopOf="@id/more_recipes"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:text="Explore more networks"
-        android:padding="6dp"
-        android:textSize="18sp"
-        android:layout_marginTop="10dp"
-        android:textColor="#34A853"/>
 
-    <View
-        android:id="@+id/more_recipes"
-        android:layout_width="192dp"
-        android:layout_height="4dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="20dp"
-        android:background="#34A853"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -78,8 +78,8 @@ class Home : AppCompatActivity() {
 
 
 
-        friend.setOnClickListener {
-            startActivity(Intent(this, Friends::class.java))
+        recipes.setOnClickListener {
+            startActivity(Intent(this, Recipe::class.java))
         }
 
         favourites.setOnClickListener {
