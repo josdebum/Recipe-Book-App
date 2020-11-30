@@ -6,7 +6,16 @@
     <color name="likeColor">#FF3B30</color>
     <color name="white">#FFFFFF</color>
 
-
+    <color name="colorOnline">#149214</color>
+    <color name="colorOffline">#7E7D7D</color>
+    <color name="colorBorder">#4D838282</color>
+    <color name="colorAccentLight">#c84241</color>
+    <color name="textColorPrimary">#222322</color>
+    <color name="textColorSecondary">#FFFFFF</color>
+    <color name="textColorSubtitle">#575757</color>
+    <color name="colorControlActivated">#c84241</color>
+    <color name="colorControlDefault">#444444</color>
+    <color name="colorWindowBackground">#eeeeee</color>
 
 
 </resources>

@@ -7,30 +7,28 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
-import com.example.recipebook.ChatListAdapter.ViewHolder
+import kotlinx.android.synthetic.main.chatitem.view.*
 
-class ChatListAdapter (private val list: ArrayList<Chats>,
-                       private val context: Context
-) : RecyclerView.Adapter<ViewHolder>() {
+class ChatAdapter (private val list: ArrayList<Message>,
+                   private val context: Context
+) : RecyclerView.Adapter<ChatAdapter.ViewHolder>() {
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        fun bindItem(chats: Chats) {
+        fun bindItem(message: Message) {
             var name: TextView = itemView.findViewById(R.id.name) as TextView
             var message: TextView = itemView.findViewById(R.id.message) as TextView
-            var image: ImageView = itemView.findViewById(R.id.userImage) as ImageView
 
-            name.text = chats.name
-            message.text = chats.message
-            image.setImageResource(chats.image)
+
+
+            message.text = message.message.toString()
+
 
 
 
             itemView.setOnClickListener {
 
-                val intent = Intent( context, OpenedChat::class.java)
-                context.startActivity(intent)
+
             }
 
         }
@@ -38,7 +36,7 @@ class ChatListAdapter (private val list: ArrayList<Chats>,
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(context).inflate(R.layout.chatitem, parent, false)
+        val view = LayoutInflater.from(context).inflate(R.layout.chat_message_item_layout, parent, false)
 
         return ViewHolder(view)
     }
