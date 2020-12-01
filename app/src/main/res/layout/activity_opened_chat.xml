@@ -51,74 +51,80 @@
         android:layout_marginTop="30dp"
         android:id="@+id/view"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/date"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="10dp"
-        android:text="Today"/>
-    
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/message_background_2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/date"
-        android:layout_marginLeft="20dp"
-        android:text="Wow."
-        android:textSize="14sp"
-        android:textColor="#AB000000"
-        android:layout_marginStart="20dp"
-        android:textAlignment="center"
-        android:gravity="center_horizontal"
-        android:paddingTop="8dp"
-        android:id="@+id/message1"
-        />
-
-    <TextView
-        android:layout_width="160dp"
-        android:layout_height="40dp"
-        android:background="@drawable/message_background_2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/message1"
-        android:layout_marginLeft="20dp"
-        android:text="So what is going on?"
-        android:textSize="14sp"
-        android:textColor="#AB000000"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="20dp"
-        android:textAlignment="center"
-        android:gravity="center_horizontal"
-        android:paddingTop="8dp"
-        android:id="@+id/message2"
-        />
-
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/message_background"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/message2"
-        android:layout_marginLeft="20dp"
-        android:text="A selection of chicken dishes served together on a white table. This is comfort food heaven."
-        android:textSize="14sp"
-        android:textColor="#AB000000"
-        android:layout_margin="20dp"
-        android:padding="20dp"
-        />
+        app:layout_constraintTop_toBottomOf="@id/view">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerMessages"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginBottom="10dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/cardMessageBar"
-        />
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:background="@drawable/message_background_2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/message1"
+                android:layout_marginLeft="20dp"
+                android:text="So what is going on?"
+                android:textSize="14sp"
+                android:textColor="#AB000000"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:paddingTop="8dp"
+                android:id="@+id/message2"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="10dp"
+                android:text="Today"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/message_background_2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/date"
+                android:layout_marginLeft="20dp"
+                android:text="Wow."
+                android:textSize="14sp"
+                android:textColor="#AB000000"
+                android:layout_marginStart="20dp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:paddingTop="8dp"
+                android:id="@+id/message1"
+                />
+
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/input_messages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/message2"
+                android:layout_margin="10dp"
+                android:textAlignment="textEnd"
+
+                android:gravity="end" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </ScrollView>
 
 
     <androidx.cardview.widget.CardView
@@ -128,7 +134,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:contentPadding="10dp">
+       >
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -136,26 +142,24 @@
 
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/txtMessageBox"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
                 android:background="@drawable/message_text_background_drawable"
-                android:layout_marginLeft="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
+                android:padding="4dp"
                 android:textSize="17sp"
                 android:maxLines="1"
                 android:lines="1"
-                android:elevation="10dp"
-                android:layout_margin="20dp"
+                android:elevation="4dp"
+                android:layout_marginStart="20dp"
                 android:singleLine="true"
+                android:paddingStart="10dp"
                 android:imeOptions="actionGo"
                 android:hint="Type a message here"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toLeftOf="@id/imgSend"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"/>
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginLeft="20dp"
+                android:paddingLeft="10dp" />
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/imgSend"
@@ -165,6 +169,7 @@
                 android:paddingTop="6dp"
                 android:elevation="10dp"
                 android:paddingBottom="5dp"
+                android:scaleType="centerCrop"
                 android:src="@drawable/ic_send_btn"
                 app:layout_constraintLeft_toRightOf="@id/txtMessageBox"
                 app:layout_constraintRight_toRightOf="parent"

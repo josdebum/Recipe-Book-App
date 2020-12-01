@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.inputmethod.EditorInfo
+import android.widget.EditText
+import android.widget.TextView
 import androidx.appcompat.widget.AppCompatEditText
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -15,11 +17,14 @@ import kotlinx.android.synthetic.main.chat_message_item_layout.*
 
 
 class OpenedChat : AppCompatActivity() {
-//    lateinit var txtMessageBox: AppCompatEditText
-//    lateinit var btnSend: AppCompatImageView
-//    private var adapter: ChatAdapter? = null
-//    private var messageList: ArrayList<Message>? = null
-//    private var layoutManager: RecyclerView.LayoutManager? = null
+    lateinit var txtMessageBox: AppCompatEditText
+    lateinit var btnSend: AppCompatImageView
+    private var adapter: ChatAdapter? = null
+    private var messageList: ArrayList<Message>? = null
+    private var layoutManager: RecyclerView.LayoutManager? = null
+    private var getInput: EditText? = null
+    private var input: TextView? = null
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,24 +32,27 @@ class OpenedChat : AppCompatActivity() {
         setContentView(R.layout.activity_opened_chat)
 
 
-//
-//        txtMessageBox = findViewById(R.id.txtMessageBox)
-//        btnSend = findViewById(R.id.imgSend)
-//
-//
-//        messageList = ArrayList()
-//        layoutManager = LinearLayoutManager(this)
-//        adapter = ChatAdapter(messageList!!, this)
-//
-//
-//        //setup list ( Recyclerview
-//        recyclerView.layoutManager = layoutManager
-//        recyclerView.adapter = adapter
-//
-//        btnSend.setOnClickListener {
-//            sendMessage(txtMessageBox.text.toString())
-//        }
-//
+
+        txtMessageBox = findViewById(R.id.txtMessageBox)
+        btnSend = findViewById(R.id.imgSend)
+
+
+
+
+        messageList = ArrayList()
+        layoutManager = LinearLayoutManager(this)
+        adapter = ChatAdapter(messageList!!, this)
+
+
+        //setup list ( Recyclerview
+        input_messages.layoutManager = layoutManager
+        input_messages.adapter = adapter
+
+
+        btnSend.setOnClickListener {
+            sendMessage(txtMessageBox.text.toString())
+        }
+    }
 //
 //        txtMessageBox.setOnEditorActionListener { v, actionId, event ->
 //            when(actionId)
@@ -59,22 +67,22 @@ class OpenedChat : AppCompatActivity() {
 //
 //        // Send Button
 //
-//         fun sendMessage(message: String) {
-//            if (!message.isEmpty()) {
-//
-//                    val messageText = message
-//
-//                    var messageModel = Message(message, true)
-//                    messageList!!.add(messageModel)
-//                    adapter?.notifyItemInserted(messageList!!.size - 1)
-//
-//                    // Clear the message box
-//                    txtMessageBox.setText("")
-//
-//            }
-//        }
+         fun sendMessage(input_message: String) {
+            if (!input_message.isEmpty()) {
+
+                   // val messageText = message
+
+                    var messageModel = Message(input_message, true)
+                    messageList!!.add(messageModel)
+                    adapter?.notifyItemInserted(messageList!!.size - 1)
+
+                    // Clear the message box
+                    txtMessageBox.setText("")
+
+            }
+        }
 
 
     }
-}
+
 

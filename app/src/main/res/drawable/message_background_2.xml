@@ -17,7 +17,7 @@
                 />
 
             <corners
-                android:radius="24dp"
+                android:radius="16dp"
                 />
 
         </shape>

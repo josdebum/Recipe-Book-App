@@ -5,28 +5,29 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.chatitem.view.*
 
-class ChatAdapter (private val list: ArrayList<Message>,
+class ChatAdapter (private val message: ArrayList<Message>,
                    private val context: Context
 ) : RecyclerView.Adapter<ChatAdapter.ViewHolder>() {
+
+
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
+
         fun bindItem(message: Message) {
-            var name: TextView = itemView.findViewById(R.id.name) as TextView
-            var message: TextView = itemView.findViewById(R.id.message) as TextView
 
 
+            var inputMessage: TextView = itemView.findViewById(R.id.name) as TextView
 
-            message.text = message.message.toString()
+            inputMessage.text = message.input_message
 
 
-
-
-            itemView.setOnClickListener {
+             itemView.setOnClickListener {
 
 
             }
@@ -42,12 +43,12 @@ class ChatAdapter (private val list: ArrayList<Message>,
     }
 
     override fun getItemCount(): Int {
-        return list.size
+        return message.size
 
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder?.bindItem(list[position])
+        holder?.bindItem(message[position])
 
 
     }
