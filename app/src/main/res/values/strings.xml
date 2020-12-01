@@ -16,7 +16,12 @@
     <string name="desc_firebase_lockup" />
     <string name="etEmail" />
     <string name="send_password_reset_email" />
+    <string name="first_ingredient"> 1/2 cup water</string>
+    <string name="second_ingredients"> 1/4 cup cornmeal</string>
+    <string name="third_ingredient"> 2 tablespoons butter</string>
+    <string name="fourth_ingredient"> 1/4 cup molasses</string>
+    <string name="fifth_ingredient"> 3 cups all-purpose flour, divided </string>
+    <string name="sixth_ingredient"> 1 teaspoon salt </string>
 
-    <string name="comet_app_id">26693739a76ed83</string>
-    <string name="comet_api_key">16589dd493e6656b17966455b849db214edae89f</string>
+
 </resources>

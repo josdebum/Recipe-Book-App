@@ -6,11 +6,12 @@ import android.os.Handler
 import android.widget.RatingBar
 import kotlinx.android.synthetic.main.activity_faved_recipe.*
 
-class FavedRecipe : AppCompatActivity() {
+class FavedRecipe : AppCompatActivity(), RatingBar.OnRatingBarChangeListener {
     var doubleClick: Boolean? = false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_faved_recipe)
+
         like.setOnClickListener(){
 
        like.setColorFilter(getResources().getColor(R.color.likeColor))
@@ -22,6 +23,14 @@ class FavedRecipe : AppCompatActivity() {
             }
     }
 
-        ratingBar.setOnRatingBarChangeListener(object : RatingBar.OnRatingBarChangeListener { override fun onRatingChanged(p0: RatingBar?, p1: Float, p2: Boolean){}
+ratingBar.onRatingBarChangeListener = RatingBar.OnRatingBarChangeListener{p0, p1, p2 ->}
 
-})}}
+        rating.onRatingBarChangeListener =
+            RatingBar.OnRatingBarChangeListener { p0, p1, p2 -> }
+}
+
+
+    override fun onRatingChanged(ratingBar: RatingBar?, rating: Float, fromUser: Boolean) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+}
