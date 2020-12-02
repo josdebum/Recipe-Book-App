@@ -51,6 +51,8 @@ It connects all the users of the app as networks, and it allows you to add or re
   </tr>
   <table>
   
+  <table>
+  
   <tr>
   <td>Create Account</td>
     <td>Home Screen</td>
@@ -64,6 +66,8 @@ It connects all the users of the app as networks, and it allows you to add or re
     <td><img src="https://user-images.githubusercontent.com/37649534/100873866-09e1b580-34a4-11eb-8556-fe296940e443.jpg" width ="250" height ="500"></td>
     
   </tr>
+  <table>
+  <table>
   
   <tr>
   <td>Recipes </td>
@@ -79,6 +83,8 @@ It connects all the users of the app as networks, and it allows you to add or re
     <td><img src="https://user-images.githubusercontent.com/37649534/100878024-ea4d8b80-34a9-11eb-912c-44400d35ac59.jpg" width ="250" height ="500"></td>
    
   </tr>
+  <table>
+  <table>
   
   <tr>
   <td>One-One Chat</td>
@@ -93,6 +99,8 @@ It connects all the users of the app as networks, and it allows you to add or re
     <td><img src="https://user-images.githubusercontent.com/37649534/100873997-33024600-34a4-11eb-8b89-803f2c600267.jpg" width = "250" height = "500"></td>
     
   </tr>
+  <table>
+  <table>
   <tr>
   
   <td>Network</td>
@@ -107,6 +115,8 @@ It connects all the users of the app as networks, and it allows you to add or re
     <td><img src="https://user-images.githubusercontent.com/37649534/100874151-6e9d1000-34a4-11eb-9539-62aaeeae1ef0.jpg" width = "250" height = "500"></td>
   
   <tr>
+  <table>
+    <table>
   
   <tr>
     <td>Friends</td>
@@ -118,6 +128,7 @@ It connects all the users of the app as networks, and it allows you to add or re
     <td><img src="https://user-images.githubusercontent.com/37649534/100874179-75c41e00-34a4-11eb-9540-51b0903d91c0.jpg" width ="250" height ="500"></td>
     <td><img src="https://user-images.githubusercontent.com/37649534/100878024-ea4d8b80-34a9-11eb-912c-44400d35ac59.jpg" width ="250" height ="500"></td>
    </tr>
+   <table>
    
    
   
