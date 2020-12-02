@@ -1,153 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".CreateAccountActivity">
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    <ImageView
-        android:id="@+id/image_icon"
-        android:layout_width="25dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="20dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:src="@drawable/black_back_arrow"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/image_icon"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginLeft="15dp"
-        android:textSize="20sp"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        android:text="Sign Up"/>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/ic_logo"/>
-
-    <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/firstName"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:hint="Full Name"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="#000000"
-        android:textColorHint="#000000"
-        android:textSize="15sp"
-        android:shadowColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text" />
-
-    <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/lastName"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:shadowColor="#FFFFFF"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/firstName"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:hint="Last Name"
-        android:textColor="#000000"
-        android:textColorHint="#000000"
-        android:textSize="15sp"/>
-
-    <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/email"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginLeft="30dp"
-        android:layout_marginStart="30dp"
-        android:shadowColor="#FFFFFF"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        app:layout_constraintTop_toBottomOf="@id/lastName"
-        android:layout_marginTop="20dp"
-        android:textColorHint="#000000"
-        android:textSize="15sp"
-        android:textColor="#000000"
-        android:hint="Email"/>
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/password"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginEnd="30dp"
-        android:shadowColor="#FFFFFF"
-        android:layout_marginRight="30dp"
-        app:layout_constraintTop_toBottomOf="@id/email"
-        android:textColor="#000000"
-        android:textSize="15sp"
-        android:textColorHint="#000000"
-        android:hint="password"
-        android:layout_marginTop="20dp"/>
-
-    <Button
-        android:id="@+id/btnCreateAccount"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/password"
-        android:layout_marginTop="60dp"
-        android:textSize="15sp"
-        android:textColor="#000000"
-        android:text="Sign Up"
-        android:textAllCaps="false"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"/>
-
-    <ProgressBar
-        android:id="@+id/progress_bar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnCreateAccount"
-        android:layout_marginTop="20dp"
-        android:visibility="invisible"/>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-    </ScrollView>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"    xmlns:app="http://schemas.android.com/apk/res-auto"    xmlns:tools="http://schemas.android.com/tools"    android:layout_width="match_parent"    android:layout_height="match_parent"    tools:context=".CreateAccountActivity"    android:background="#FFFFFF">    <androidx.constraintlayout.widget.ConstraintLayout        android:layout_width="match_parent"        android:layout_height="match_parent">        <ImageView            android:id="@+id/image_icon"            android:layout_width="80dp"            android:layout_height="50dp"            android:layout_marginStart="14dp"            android:layout_marginLeft="25dp"            android:layout_marginTop="40dp"            android:paddingLeft="10dp"            android:paddingRight="10dp"            android:src="@drawable/black_back_arrow"            app:layout_constraintStart_toStartOf="parent"            app:layout_constraintTop_toTopOf="parent" />        <TextView            android:id="@+id/text"            android:layout_width="wrap_content"            android:layout_height="wrap_content"            app:layout_constraintTop_toTopOf="parent"            app:layout_constraintLeft_toRightOf="@id/image_icon"            android:layout_marginStart="15dp"            android:layout_marginTop="50dp"            android:layout_marginLeft="15dp"            android:textSize="24sp"            android:textColor="#000000"            android:textStyle="bold"            android:text="Sign Up"/>        <ImageView            android:layout_width="wrap_content"            android:layout_height="wrap_content"            app:layout_constraintTop_toTopOf="parent"            app:layout_constraintEnd_toEndOf="parent"            android:layout_marginEnd="25dp"            android:layout_marginRight="25dp"            android:layout_marginTop="40dp"            android:src="@drawable/ic_logo"/>        <androidx.appcompat.widget.AppCompatEditText        android:id="@+id/firstName"        android:layout_width="match_parent"        android:layout_height="50dp"        android:layout_marginStart="30dp"        android:layout_marginLeft="30dp"        android:layout_marginTop="60dp"        android:layout_marginEnd="30dp"        android:layout_marginRight="30dp"        android:hint="First Name"            android:elevation="10dp"        android:textAppearance="@style/TextAppearance.AppCompat.Body1"        android:textColor="#000000"        android:textSize="15sp"        android:shadowColor="#FFFFFF"            android:background="@drawable/login_background"            android:paddingStart="10dp"        app:layout_constraintEnd_toEndOf="parent"        app:layout_constraintStart_toStartOf="parent"        app:layout_constraintTop_toBottomOf="@id/text"            android:paddingLeft="10dp" />    <androidx.appcompat.widget.AppCompatEditText        android:background="@drawable/login_background"        android:paddingStart="10dp"        android:id="@+id/lastName"        android:layout_width="match_parent"        android:layout_height="50dp"        android:shadowColor="#FFFFFF"        android:elevation="10dp"        app:layout_constraintStart_toStartOf="parent"        app:layout_constraintEnd_toEndOf="parent"        app:layout_constraintTop_toBottomOf="@id/firstName"        android:layout_marginTop="20dp"        android:layout_marginStart="30dp"        android:layout_marginLeft="30dp"        android:layout_marginEnd="30dp"        android:layout_marginRight="30dp"        android:hint="Last Name"        android:textColor="#000000"        android:textSize="15sp"        android:paddingLeft="10dp" />    <androidx.appcompat.widget.AppCompatEditText        android:background="@drawable/login_background"        android:paddingStart="10dp"        android:id="@+id/email"        android:elevation="10dp"        android:layout_width="match_parent"        android:layout_height="50dp"        app:layout_constraintStart_toStartOf="parent"        app:layout_constraintEnd_toEndOf="parent"        android:layout_marginLeft="30dp"        android:layout_marginStart="30dp"        android:shadowColor="#FFFFFF"        android:layout_marginEnd="30dp"        android:layout_marginRight="30dp"        app:layout_constraintTop_toBottomOf="@id/lastName"        android:layout_marginTop="20dp"        android:textSize="15sp"        android:textColor="#000000"        android:hint="Email"        android:paddingLeft="10dp" />    <com.google.android.material.textfield.TextInputEditText        android:id="@+id/password"        android:background="@drawable/login_background"        android:paddingStart="10dp"        android:layout_width="match_parent"        android:layout_height="50dp"        app:layout_constraintStart_toStartOf="parent"        app:layout_constraintEnd_toEndOf="parent"        android:layout_marginStart="30dp"        android:layout_marginLeft="30dp"        android:layout_marginEnd="30dp"        android:shadowColor="#FFFFFF"        android:elevation="10dp"        android:layout_marginRight="30dp"        app:layout_constraintTop_toBottomOf="@id/email"        android:textColor="#000000"        android:textSize="15sp"        android:hint="password"        android:layout_marginTop="20dp"        android:paddingLeft="10dp" />    <Button        android:id="@+id/btnCreateAccount"        android:layout_width="match_parent"        android:layout_height="wrap_content"        app:layout_constraintStart_toStartOf="parent"        app:layout_constraintEnd_toEndOf="parent"        app:layout_constraintTop_toBottomOf="@id/password"        android:layout_marginTop="60dp"        android:textSize="15sp"        android:textColor="#FFFFFF"        android:text="Sign Up"        android:textAllCaps="false"        android:layout_marginStart="30dp"        android:layout_marginLeft="30dp"        android:layout_marginEnd="30dp"        android:elevation="10dp"        android:background="@drawable/green_round_background"        android:layout_marginRight="30dp"/>    <ProgressBar        android:id="@+id/progress_bar"        android:layout_width="wrap_content"        android:layout_height="wrap_content"        app:layout_constraintStart_toStartOf="parent"        app:layout_constraintEnd_toEndOf="parent"        app:layout_constraintTop_toBottomOf="@id/btnCreateAccount"        android:layout_marginTop="20dp"        android:visibility="invisible"/>    </androidx.constraintlayout.widget.ConstraintLayout>    </ScrollView>

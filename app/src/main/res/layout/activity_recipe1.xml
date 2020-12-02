@@ -64,7 +64,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:drawableRight="@drawable/search_button"
         android:id="@+id/search_friends"
-        android:hint="Search Friends"/>
+        android:hint="Search Recipes"/>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/second_background"
@@ -75,7 +75,6 @@
         android:src="@drawable/mask"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/search_friends"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:cardCornerRadius="30dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
