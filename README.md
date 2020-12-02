@@ -34,6 +34,8 @@ It connects all the users of the app as networks, and it allows you to add or re
   </tr>
   
   <table>
+  
+  <table>
   <tr>
     <td>Forget Password Screen</td>
      <td>Reset Password Mail</td>
@@ -47,6 +49,7 @@ It connects all the users of the app as networks, and it allows you to add or re
     <td><img src="https://user-images.githubusercontent.com/37649534/100873783-f46c8b80-34a3-11eb-9133-9b0ae926f9ff.jpg" width ="250" height ="500"></td>
     
   </tr>
+  <table>
   
   <tr>
   <td>Create Account</td>
