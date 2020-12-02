@@ -79,8 +79,8 @@ It connects all the users of the app as networks, and it allows you to add or re
   <tr>
     <td>Network</td>
      <td>Favourites</td>
-     <td>Chat</td>
-      <td>Chat </td>
+     <td>Favourite</td>
+      <td>Favourite </td>
      
   </tr>
   <tr>
@@ -93,14 +93,14 @@ It connects all the users of the app as networks, and it allows you to add or re
   <tr>
     <td>Friends</td>
      <td>Friend's Profile</td>
-     <td>Friend's Profile</td>
-     
-     
+     <td>Friend's Profile</td>  
   </tr>
   <tr>
     <td><img src="https://user-images.githubusercontent.com/37649534/100874125-6513a800-34a4-11eb-836f-0ccd4812a015.jpg" width ="250" height ="500"></td>
     <td><img src="https://user-images.githubusercontent.com/37649534/100874179-75c41e00-34a4-11eb-9540-51b0903d91c0.jpg" width ="250" height ="500"></td>
     <td><img src="https://user-images.githubusercontent.com/37649534/100878024-ea4d8b80-34a9-11eb-912c-44400d35ac59.jpg" width ="250" height ="500"></td>
    </tr>
+   
+   
   
   
